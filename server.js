@@ -1,9 +1,14 @@
 const express = require("express");
+const connectDB = require("./config/db");
+
 const usersRoute = require("./routes/users");
 const authRoute = require("./routes/auth");
 const contactsRoute = require("./routes/contacts");
 
 const app = express();
+connectDB();
+
+app.use(express.json({ extended: false }));
 
 app.get("/", (req, res) => res.json({ msg: "Hello World" }));
 
