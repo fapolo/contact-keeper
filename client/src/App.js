@@ -22,8 +22,8 @@ const App = () => {
             <Fragment>
               <Navbar />
               <div className='container'>
+                <Alerts />
                 <Switch>
-                  <Alerts />
                   <Route exact path='/' component={Home} />
                   <Route exact path='/about' component={About} />
                   <Route exact path='/register' component={Register} />
