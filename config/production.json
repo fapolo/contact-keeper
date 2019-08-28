@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://fapolo:A030190a@basecluster-s46ml.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
+}
